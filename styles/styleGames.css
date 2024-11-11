@@ -217,6 +217,7 @@ body {
     background: linear-gradient(90deg, var(--c1) 2px, var(--c2) 0 5px,var(--c1) 0) 50%/7px 8px no-repeat;
     overflow: hidden;
     display: none;
+    position: absolute;
     animation: l5-0 2s infinite linear;
   }
   #loader0::before,
@@ -259,7 +260,7 @@ body {
 
 #pLoader {
     position: absolute;
-    top: 55%;
+    top: 60%;
     background: none;
     color: black;
     font-size: 1rem;
