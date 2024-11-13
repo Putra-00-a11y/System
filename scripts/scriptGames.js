@@ -30,6 +30,7 @@ const pLoader = document.getElementById("pLoader");
     window.location.assign = "aturan.html";
     window.location.assign = "peringkat.html";
     window.location.assign = "event15.html";
+    window.location.assign = "00.html";
 
 function mulaiGames() {
     console.log('Game Debugging..');
@@ -48,6 +49,7 @@ function mulaiGames() {
                 console.log('Games Begin!');
                 loading0.style.display = "none";
                 pLoader.style.display = "none";
+                window.location.href = "00.html";
             }, 7300);
     }, 1200);
 }
