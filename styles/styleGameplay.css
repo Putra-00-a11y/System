@@ -47,3 +47,218 @@ body {
     opacity: 80%;
     cursor: default;
 }
+
+#divWrapSoalan {
+    position: absolute;
+    top: 15%;
+    background: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 20%;
+    opacity: 90%;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#pSoalan {
+    background: none;
+    color: black;
+    font-size: 1rem;
+    font-family: Georgia;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+#hr {
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    height: 1%;
+    background-color: black;
+    border-radius: 5px;
+    opacity: 90%;
+    cursor: default;
+    filter: drop-shadow(0 0 2px
+    black);
+    animation-name: hrAnimateTime;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hrAnimateTime {
+    from {
+        width: 70%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+#button0 {
+    position: absolute;
+    top: 46%;
+    background: transparent;
+    color: black;
+    width: 75%;
+    height: 5%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 2px solid black;
+    border-radius: 3%;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#button0:active {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    width: 70%;
+    height: 5%;
+    opacity: 90%;
+}
+
+#button1 {
+    position: absolute;
+    top: 54%;
+    background: transparent;
+    color: black;
+    width: 75%;
+    height: 5%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 2px solid black;
+    border-radius: 3%;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#button1:active {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    width: 70%;
+    height: 5%;
+    opacity: 90%;
+}
+
+#button2 {
+    position: absolute;
+    top: 62%;
+    background: transparent;
+    color: black;
+    width: 75%;
+    height: 5%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 2px solid black;
+    border-radius: 3%;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#button2:active {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    width: 70%;
+    height: 5%;
+    opacity: 90%;
+}
+
+#button3 {
+    position: absolute;
+    top: 70%;
+    background: transparent;
+    color: black;
+    width: 75%;
+    height: 5%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 2px solid black;
+    border-radius: 3%;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#button3:active {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    width: 70%;
+    height: 5%;
+    opacity: 90%;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    position: absolute;
+    top: 36%;
+    width: 31px;
+    height: 31px;
+    aspect-ratio: 1;
+    display: flex;
+    color: #000;
+    border: 4px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 80%;
+    cursor: default;
+    background: 
+      radial-gradient(circle 5px, currentColor 95%,#0000),
+      linear-gradient(currentColor 50%,#0000 0) 50%/4px 60% no-repeat;
+    animation: l1 2s infinite linear;
+  }
+  .loader:before {
+    content: "";
+    flex: 1;
+    background:linear-gradient(currentColor 50%,#0000 0) 50%/4px 80% no-repeat;
+    animation: inherit;
+  }
+  @keyframes l1 {
+    100% {transform: rotate(1turn)}
+  }
+
+#puzzle_icon {
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    width: 210px;
+    height: 210px;
+    opacity: 20%;
+    cursor: default;
+    z-index: -1;
+    transform: rotate(22deg);
+}
+
+#coding_icon {
+    position: absolute;
+    left: 70%;
+    top: 32%;
+    width: 80px;
+    height: 80px;
+    opacity: 30%;
+    cursor: default;
+    z-index: -1;
+    transform: rotate(-18deg);
+}

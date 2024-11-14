@@ -12,6 +12,7 @@ const img = document.getElementById("eventIcon");
 const hr = document.getElementById("line0");
 const loading0 = document.getElementById("loader0");
 const pLoader = document.getElementById("pLoader");
+const fails = document.getElementById("buttonFail");
 
     play.style.display = "block";
     rule.style.display = "block";
@@ -35,23 +36,31 @@ const pLoader = document.getElementById("pLoader");
 function mulaiGames() {
     console.log('Game Debugging..');
 
-    setTimeout(() => {
-        console.log('Loading Prepare!');
-        loading0.style.display = "grid";
-        play.style.display = "none";
-        rule.style.display = "none";
-        leaderboard.style.display = "none";
-        event15.style.display = "none";
-        img.style.display = "none";
-        hr.style.display = "none";
-        pLoader.style.display = "block";
-            setTimeout(() => {
-                console.log('Games Begin!');
-                loading0.style.display = "none";
-                pLoader.style.display = "none";
-                window.location.href = "00.html";
-            }, 7300);
-    }, 1200);
+    const start = prompt('Ketik "YAKIN" Jika Sudah Siap..');
+    if (prompt.apply = start == "YAKIN") {
+        console.log('Sistem Permainan Dimulai!');
+        setTimeout(() => {
+            console.log('Loading Prepare!');
+            loading0.style.display = "grid";
+            play.style.display = "none";
+            rule.style.display = "none";
+            leaderboard.style.display = "none";
+            event15.style.display = "none";
+            img.style.display = "none";
+            hr.style.display = "none";
+            pLoader.style.display = "block";
+                setTimeout(() => {
+                    console.log('Games Begin!');
+                    loading0.style.display = "none";
+                    pLoader.style.display = "none";
+                    window.location.href = "00.html";
+                }, 7300);
+        }, 1200);
+    }
+    else {
+        console.log('Pemain Belum Siap..');
+        return 0;
+    }
 }
 
 function peringkatGames() {
@@ -106,6 +115,16 @@ function eventGames() {
 
 function danaBack() {
     console.log('Kembali ke Laman Awal..');
+        window.location.assign = "index.html";
+
+    setTimeout(() => {
+        console.log('Keluar Laman Berhasil');
+        window.location.href = "index.html";
+    }, 1700);
+}
+
+function buttonFail0() {
+    console.log('Kembali ke Laman Awal');
         window.location.assign = "index.html";
 
     setTimeout(() => {
