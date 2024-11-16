@@ -12,7 +12,7 @@ const mCorrect = document.getElementById("musicCorrect");
     buttonM2.style.display = "block";
     buttonM3.style.display = "block";
 
-    window.location.assign = "18.html";
+    window.location.assign = "29.html";
     window.location.assign = "gagal.html";
 
 function buttons0() {
@@ -36,7 +36,7 @@ function buttons1() {
     buttonM2.style.display = "none";
     buttonM3.style.display = "none";
     setTimeout(() => {
-        console.log('Kembali Ke Laman Gagal')
+        console.log('Kembali Ke Laman Gagal');
         window.location.href = "gagal.html";
     }, 1500);
 }
@@ -62,6 +62,6 @@ function buttons3() {
     buttonM3.style.backgroundColor = "green";
     mCorrect.play();
     setTimeout(() => {
-        window.location.href = "18.html";
+        window.location.href = "29.html";
     }, 1500);
 }

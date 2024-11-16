@@ -12,7 +12,7 @@ const mCorrect = document.getElementById("musicCorrect");
     buttonM2.style.display = "block";
     buttonM3.style.display = "block";
 
-    window.location.assign = "18.html";
+    window.location.assign = "19.html";
     window.location.assign = "gagal.html";
 
 function buttons0() {
@@ -23,21 +23,20 @@ function buttons0() {
     buttonM2.style.display = "none";
     buttonM3.style.display = "none";
     setTimeout(() => {
-        console.log('Kembali Ke Laman Gagal');
+        console.log('Kembali Ke Laman Gagal')
         window.location.href = "gagal.html";
     }, 1500);
 }
 
 function buttons1() {
-    console.log('Jawaban Salah!');
-    alert('Jawaban Salah!');
+    console.log('Jawaban Benar!');
     buttonM0.style.display = "none";
-    buttonM1.style.backgroundColor = "red";
+    buttonM1.style.backgroundColor = "green";
     buttonM2.style.display = "none";
     buttonM3.style.display = "none";
+    mCorrect.play();
     setTimeout(() => {
-        console.log('Kembali Ke Laman Gagal')
-        window.location.href = "gagal.html";
+        window.location.href = "19.html";
     }, 1500);
 }
 
@@ -55,13 +54,14 @@ function buttons2() {
 }
 
 function buttons3() {
-    console.log('Jawaban Benar!');
+    console.log('Jawaban Salah!');
+    alert('Jawaban Salah!');
     buttonM0.style.display = "none";
     buttonM1.style.display = "none";
     buttonM2.style.display = "none";
-    buttonM3.style.backgroundColor = "green";
-    mCorrect.play();
+    buttonM3.style.backgroundColor = "red";
     setTimeout(() => {
-        window.location.href = "18.html";
+        console.log('Kembali Ke Laman Gagal');
+        window.location.href = "gagal.html";
     }, 1500);
 }
