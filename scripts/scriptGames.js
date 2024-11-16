@@ -1,14 +1,6 @@
 console.log('Welcome Putra S.O');
 console.log('Welcome to Debugging!');
 
-const onlyDev = prompt();
-if (prompt = onlyDev == "Beta") {
-    console.log('OK');
-}
-else {
-    alert('WEBSITE MAINTENANCE!');
-}
-
 const play = document.getElementById("mulaiButton");
 const rule = document.getElementById("aturanButton");
 const leaderboard = document.getElementById("peringkatButton");
