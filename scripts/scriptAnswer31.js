@@ -12,7 +12,7 @@ const mCorrect = document.getElementById("musicCorrect");
     buttonM2.style.display = "block";
     buttonM3.style.display = "block";
 
-    window.location.assign = "30.html";
+    window.location.assign = "32.html";
     window.location.assign = "gagal.html";
 
 function buttons0() {
@@ -36,13 +36,13 @@ function buttons1() {
     buttonM3.style.display = "none";
     mCorrect.play();
     setTimeout(() => {
-        window.location.href = "30.html";
-    }, 2500);
+        window.location.href = "32.html";
+    }, 1500);
 }
 
 function buttons2() {
     console.log('Jawaban Salah!');
-    alert('Gabisa yaa? Kasian..!');
+    alert('Jawaban Salah!');
     buttonM0.style.display = "none";
     buttonM1.style.display = "none";
     buttonM2.style.backgroundColor = "red";
@@ -55,7 +55,7 @@ function buttons2() {
 
 function buttons3() {
     console.log('Jawaban Salah!');
-    alert('Gabisa yaa? Kasiann..');
+    alert('Jawaban Salah!');
     buttonM0.style.display = "none";
     buttonM1.style.display = "none";
     buttonM2.style.display = "none";
