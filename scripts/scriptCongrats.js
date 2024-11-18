@@ -4,11 +4,15 @@ console.log('Welcoming for Putra!');
 const buttonPrize = document.getElementById("buttonTf");
 
 function buttonTF() {
-    console.log('Masuk Laman Penukaran Hadiah!');
+    // console.log('Masuk Laman Penukaran Hadiah!');
 
-    window.location.assign = "prizepool.html";
+    // window.location.assign = "prizepool.html";
+    // setTimeout(() => {
+    //     console.log('Masuk Laman Berhasil..');
+    //     window.location.href = "prizepool.html";
+    // }, 2000);
+
     setTimeout(() => {
-        console.log('Masuk Laman Berhasil..');
-        window.location.href = "prizepool.html";
-    }, 2000);
+        alert('MAINTENANCE!');
+    }, 1500);
 }
